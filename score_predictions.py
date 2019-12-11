@@ -47,7 +47,6 @@ def main(opt):
             lambda x: canonicalize_smiles(x))
 
     test_df['rank'] = test_df.apply(lambda row: get_rank(row, 'canonical_prediction_', opt.beam_size), axis=1)
-    test_df.to_csv('surprise.csv')
     correct = 0
     invalid_smiles = 0
     for i in range(1, opt.beam_size+1):
@@ -71,9 +70,9 @@ if __name__ == "__main__":
                        help='Beam size')
     parser.add_argument('-invalid_smiles', action="store_true",
                        help='Show %% of invalid SMILES')
-    parser.add_argument('-predictions', type=str, default="experiments/final/predictions_on_Dataset_ClusterSplit_withRX_beam10.txt",
+    parser.add_argument('-predictions', type=str, required=True,
                        help="Path to file containing the predictions")
-    parser.add_argument('-targets', type=str, default="data/MIT_mixed_augm_clusterSplit/tgt-valid-RX",
+    parser.add_argument('-targets', type=str, required=True,
                        help="Path to file containing targets")
 
     opt = parser.parse_args()

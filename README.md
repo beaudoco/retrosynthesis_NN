@@ -35,7 +35,7 @@ In the experiments we use an open-source datasets (and train/valid/test splits).
 
 * [**USPTO-50K** dataset](https://github.com/pandegroup/reaction_prediction_seq2seq) data/USPTO-50K
 * [**USPTO-50K-cluster** dataset]() 
-
+* [**Jin’s USPTO dataset**](https://github.com/sysu-yanglab/Self-Corrected-Retrosynthetic-Reaction-Predictor/blob/master/Jin's_USPTO_dataset.zip)
 
 The tokenized datasets can be found on the `data/` folder. 
 
@@ -75,7 +75,11 @@ Run the the [score_predictions.sh](https://github.com/sysu-yanglab/Self-Correcte
 
 # Molecular syntax corrector
 
-Coming soon ...
+1. use a fully trained model to generate the top ten candidate precursors given a set of target compounds in the training set and validation set.
+2. construct a training library that consists of a set of input-output pairs, where the inputs are predicted invalid reactants, and the outputs are the ground truth reactants.
+3. get the top-1 candidate produced by the syntax corrector and replace the original invalid smiles.
+* run the the [self_corrected.sh](https://github.com/sysu-yanglab/Self-Corrected-Retrosynthetic-Reaction-Predictor/blob/master/self_corrected.sh) script to get the top-10 accuracy of the syntax corrector.
+
 
 ## Citation
 
