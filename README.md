@@ -35,7 +35,7 @@ In the experiments we use an open-source datasets (and train/valid/test splits).
 
 * [**USPTO-50K** dataset](https://github.com/pandegroup/reaction_prediction_seq2seq) data/USPTO-50K
 * [**USPTO-50K-cluster** dataset]() 
-* [**Jin’s USPTO dataset**](https://github.com/sysu-yanglab/Self-Corrected-Retrosynthetic-Reaction-Predictor/blob/master/Jin's_USPTO_dataset.zip)
+* [**Jin’s USPTO dataset**](https://github.com/sysu-yanglab/Self-Corrected-Retrosynthetic-Reaction-Predictor/blob/master/data/Jin's_USPTO_dataset.zip)
 
 The tokenized datasets can be found on the `data/` folder. 
 
