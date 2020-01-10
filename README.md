@@ -1,7 +1,7 @@
 # Self-Corrected Retrosynthetic Reaction Predictor
 
 This is the code for the "Predicting Retrosynthetic Reaction using Self-Corrected Transformer Neural Networks" paper
-found on [arxiv](https://arxiv.org/abs/1907.01356) or [ChemRxiv](https://chemrxiv.org/articles/Predicting_Retrosynthetic_Reaction_using_Self-Corrected_Transformer_Neural_Networks/8427776).
+found on [Journal of Chemical Information and Modeling](https://pubs.acs.org/doi/abs/10.1021/acs.jcim.9b00949)
 
 To implement our models we were based on [OpenNMT-py (v0.4.1)](http://opennmt.net/OpenNMT-py/).
 
